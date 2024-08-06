@@ -12,9 +12,10 @@ export default function Footer() {
         <div className="footer-contents">
             <FooterHead />
             <FooterLeg />
+            <FooterBottom />
         </div>
-        <FooterBottom />
     </footer>
+    
     <Copyright text={'© 2024 OmeifeTechnologiesLimited. All right reserved'} />
     </>
     )

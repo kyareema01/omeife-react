@@ -31,7 +31,7 @@ export const carouselData = [
     },
 ]
 
-export const feedbacksData = [
+export const feedbacks = [
     {
         key: 0,
         name: 'Jennifer Moore',

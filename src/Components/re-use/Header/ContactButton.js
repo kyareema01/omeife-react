@@ -1,10 +1,15 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './../../../index.css'
 
 function ContactButton() {
+
+  const route = () => {
+    window.location.href = '/contact-us'
+  }
+
   return (
-    <button className="btn" id="btn">
-      <a href="/contact-us.html">Contact Us</a>
+    <button onClick={route} className="btn" id="btn">
+      Contact Us
     </button>
   );
 }

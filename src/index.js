@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
+import './index-tailwind.css';
 import App from './App';
 import { RouterProvider } from 'react-router-dom';
 import { routes } from './routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Home from './pages/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

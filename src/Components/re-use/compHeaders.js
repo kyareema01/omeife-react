@@ -3,7 +3,7 @@ import './../../index.css';
 export default function CompHeaderInfo({ imgSrc, imgSrcRight, title, text}) {
     return (
         <>
-         <div className="header">
+         <div className="comp-header">
             <div className="top-header">
                 <img src={imgSrc} alt='svg' />
                 <h2>{title}</h2>
