@@ -7,27 +7,32 @@ export default function Links() {
 
         <ul style={{paddingLeft: '0rem'}}>
             <li class="list">
-                <Link href="#">
+                <Link to="/">
                     Home
                 </Link>
             </li>
             <li cass="list">
-                <Link href="#">
+                <Link to="/Services-page">
                     Services
                 </Link>
             </li>
             <li class="list">
-                <Link href="#">
+                <Link to="/AboutUs">
                     About Us
                 </Link>
             </li>
             <li class="list">
-                <Link href="#">
+                <Link to="/Team">
+                    Team
+                </Link>
+            </li>
+            <li class="list">
+                <Link to="/Contact-us">
                     Contact Us
                 </Link>
             </li>
             <li class="list">
-                <Link href="#">
+                <Link to="/Blog">
                     Blog
                 </Link>
             </li>

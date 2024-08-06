@@ -1,5 +1,5 @@
 import React from 'react';
-import Panel from '../re-use/Wcu-panel';
+import Panel from '../re-use/Wcu-AboutUs-panel';
 import wcuImg from './../../imgs/wcu.png'
 import CompHeaderInfo from '../re-use/compHeaders';
 import svg from './../../imgs/avg-left.svg'

@@ -17,7 +17,7 @@ export default function Home() {
         <ServicesBody />    
         <CustomersFeedback />
 
-        <Footer />
+      <Footer />
     </>
   )
 }

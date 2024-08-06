@@ -1,10 +1,13 @@
 import React from 'react'
-import DarkVariantExample from '../re-use/CarouselItem'
+import DarkVariantExample from './../re-use/CarouselItem'
+import { carouselData } from './../re-use/carouselData'
 
 export default function HeaderCarousel() {
   return (
     <>
-      <DarkVariantExample />
+      <DarkVariantExample
+        Data={carouselData}
+      />
     </>
   )
 }

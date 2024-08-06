@@ -1,50 +1,90 @@
-import './../index.css'
+import './../../index.css'
 
-export default function ServicesPanel({ text, secText, boldHeader, reverse, thirdText }) {
+export default function ServicesPanel({ 
+   text,
+   secText,
+   thirdText,
+   fourthText,
+   boldHeader,
+   boldHeaderSecond,
+   boldHeaderThird,
+   boldHeaderFourth,
+   hasTwoParagraphs,
+   hasThreeParagraphs,
+   reverse,
+    }) {
+
   return (
 
-  <div className='advisory'>
-    {!reverse ? ( 
-      <>
-    <div className="advisory-left-content">
+  <div className='services-page'>
+  {!reverse ? ( 
+    <>
+    <div className="services-p-left-content">
         <p>
-          <span>{boldHeader}</span>
+          <span>{boldHeader + ' '}</span>
           {text}
         </p>
           
         <p>
-          <span>{boldHeader}</span>
+          <span>{boldHeaderSecond + ' '}</span>
           {secText}
         </p>
-      </div>
 
-     <div className="advisory-right-content">
-  </div>
+        {!hasTwoParagraphs && (
+          <>
+          <p>
+            <span>{boldHeaderThird + ' '}</span>
+            {thirdText}
+          </p>
+          </>
+        )}
+        {!hasThreeParagraphs && !hasTwoParagraphs && (
+          <>
+            <p>
+              <span>{boldHeaderFourth + ' '}</span>
+              {fourthText}
+            </p>
+          </>
+        )}
+    </div>
+
+     <div className="services-p-right-content"></div>
   </>
   ) : (
-      <>
-      <div className="advisory-right-content">
+    <>
+      <div className="services-p-right-content"></div>
 
-      </div>
-
-      <div className="advisory-left-content">
+      <div className="services-p-left-content">
         <p>
-          <span>{boldHeader}</span>
+          <span>{boldHeader + ' '}</span>
           {text}
         </p>
-        
+          
         <p>
-          <span>{boldHeader}</span>
+          <span>{boldHeaderSecond + ' '}</span>
           {secText}
         </p>
 
-        <p>
-          <span>{boldHeader}</span>
-          {thirdText}
-        </p>
-      </div>
+        {!hasTwoParagraphs && (
+          <>
+            <p>
+              <span>{boldHeaderThird + ' '}</span>
+              {thirdText}
+            </p>
+          </>
+        )}
+        {!hasThreeParagraphs && !hasTwoParagraphs && (
+          <>
+          <p>
+            <span>{boldHeaderFourth + ' '}</span>
+            {fourthText}
+          </p>
+        </>
+        )}
+    </div>
     </>
   )}
   </div>
  )
 }
+
