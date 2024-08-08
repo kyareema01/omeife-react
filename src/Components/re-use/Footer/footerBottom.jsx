@@ -5,6 +5,7 @@ import linkedln from '../../../imgs/Frame 16.svg';
 import facebook from '../../../imgs/Frame 17.svg';
 import instagram from '../../../imgs/Frame 18.svg';
 import youtube from '../../../imgs/Frame 19.svg'
+import { Link } from 'react-router-dom';
 
 export default function FooterBottom() {
   return (
@@ -15,11 +16,11 @@ export default function FooterBottom() {
         </div>
 
         <div className="socials">
-            <img src={X} alt='img' />
-            <img src={linkedln} alt='img' />
-            <img src={facebook} alt='img' />
-            <img src={instagram} alt='img' />
-            <img src={youtube} alt='img' />
+            <Link to={"https://x.com/iamomeife1"}><img src={X} alt='img' /></Link>
+            <Link to={"https://www.linkedin.com/company/omeife-technologies/?viewAsMember=true"}><img src={linkedln} alt='img' /></Link>
+            <Link to={"https://www.facebook.com/iamomeife"}><img src={facebook} alt='img' /></Link>
+            <Link to={"https://www.instagram.com/omeifetechnologies/"}><img src={instagram} alt='img' /></Link>
+            <Link to={"https://www.youtube.com/channel/UCfBcDbCfbire1LFBumtbVYg"}><img src={youtube} alt='img' /></Link>
         </div>
     </div>
   )

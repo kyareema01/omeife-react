@@ -6,7 +6,7 @@ import svg from './../../imgs/avg-left.svg'
 import svgR from './../../imgs//svg-right.svg'
 
 export default function Management() {
-
+  
   return (
     <>
     <CompHeaderInfo 
@@ -26,23 +26,17 @@ export default function Management() {
 
         let cardIndex = ''
 
-        if (index === 0) {
+        if (index === 0 || index === 3) {
           cardIndex='first'
-        } else if (index === 1) {
+        } else if (index === 1 || index === 4) {
           cardIndex = 'second'
-        } else if (index === 2) {
+        } else if (index === 2 || index === 5) {
           cardIndex = 'third'
-        } else if (index === 3) {
-          cardIndex='first'
-        } else if (index === 4) {
-          cardIndex = 'second'
-        } else if (index === 5) {
-          cardIndex = 'third'
-        }
+        } 
 
         return (
         <div className={`mgt-card ${cardIndex}`} key={index}>
-          <div className={`border ${cardIndex}`}>
+          <div className={`border- ${cardIndex}`}>
           <div className={`rectangle ${cardIndex}`}></div>
           <div className="bg"></div>
           <div className={`img-bg ${cardIndex}`}>

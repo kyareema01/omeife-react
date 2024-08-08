@@ -3,6 +3,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function DarkVariantExample({ Data }) {
   const [active,setActive] =  useState(0);
+
+  const route = () => {
+    window.location.href = '/contact-us'
+  }
   
   return (
     <div className='header carousel'>
@@ -18,7 +22,7 @@ function DarkVariantExample({ Data }) {
           <div className="getInTouch">
             <h2>{value.header}</h2>
             <p>{value.text}</p>
-            <button className="btn" id="git-btn">{value.btnText}</button>
+            <button className="btn" id="git-btn" onClick={route}>{value.btnText}</button>
           </div>
          </Carousel.Item>
        ))}
@@ -30,7 +34,7 @@ function DarkVariantExample({ Data }) {
     ))}
   </div>
 </div>
-  );
+);
 }
 
 export default DarkVariantExample;
