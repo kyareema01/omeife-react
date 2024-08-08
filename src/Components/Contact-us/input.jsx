@@ -5,7 +5,7 @@ export default function Form() {
     <form action="https://formspree.io/f/mwpeejer
     " method="post">
        <label>Full Name</label>
-        <input type="text" value='full name'/>
+        <input type="text" />
 
        <label>Email</label>
         <input type="text" />
